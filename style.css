@@ -47,6 +47,7 @@ img {
   line-height: 120%;
   color: #FFFFFF;
   margin-left: 123px;
+  max-width: 425px;
 }
 .hero h1 .stroke {
   -webkit-text-stroke: 0.5px #404040;
@@ -120,7 +121,7 @@ img.align-self-start {
   font-size: 14px;
   line-height: 125%;
   color: #63666E;
-  width: 300px;
+  max-width: 300px;
 }
 .form-text p:last-of-type {
  margin-bottom: 23.13px;
@@ -230,7 +231,7 @@ a:hover {
     max-width: 507.95px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .form {
     position: relative;
     width: 80%;
@@ -248,6 +249,7 @@ a:hover {
   }
   .hero p {
     margin-left: 52px;
+    margin-right: 40px;
   }
   .media {
     max-width: 607.95px;
