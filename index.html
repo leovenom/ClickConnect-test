@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Course - Pilates & Yoga</title>
+  <meta name="description" content="Course - Pilates & Yoga">
+  <meta property="og:title" content="Course - Pilates & Yoga">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧘</text></svg>">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Courses</title>
+</head>
+<body>
+  <!-- Hero -->
+  <div class="hero-image">
+    <div class="hero">
+      <h1>This is the header of this webpage</h1>
+      <h1 class="stroke">for this test</h1>
+      <p>This is part of the header of a test page for a web <br> developer</p>
+    </div>
+  </div>
+  <!-- Form -->
+  <div class="form px-5">
+    <form action="https://www.endpointurlforhistest.com" method="post”>
+      <input id="Location" name="Miami" type="hidden" value="MIA"/>
+      <div class="vector">
+        <svg class="up" width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.30367 3.84474L13.4934 1.25629C13.6899 1.17035 13.6869 1.03385 13.4813 0.951694C13.2819 0.870805 12.9645 0.870805 12.7651 0.951694L6.94099 3.38721L1.1139 0.951694C0.914426 0.867013 0.588013 0.867013 0.385516 0.951694C0.183018 1.03637 0.183018 1.17287 0.385516 1.25629L6.57528 3.84474C6.77778 3.92942 7.10419 3.92942 7.30367 3.84474Z" fill="#212353"/>
+        </svg>
+        <svg class="down" width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.30367 3.84474L13.4934 1.25629C13.6899 1.17035 13.6869 1.03385 13.4813 0.951694C13.2819 0.870805 12.9645 0.870805 12.7651 0.951694L6.94099 3.38721L1.1139 0.951694C0.914426 0.867013 0.588013 0.867013 0.385516 0.951694C0.183018 1.03637 0.183018 1.17287 0.385516 1.25629L6.57528 3.84474C6.77778 3.92942 7.10419 3.92942 7.30367 3.84474Z" fill="#212353"/>
+        </svg>          
+      </div>
+      <div class="form-text">
+        <h2>This is a <span>form*</span> 🙌🏼</h2>
+        <p>Please fill the form with the data provided Please fill the form with the data provided Please fill the form with the data provided</p>
+        <p>Please fill the form with the data provided</p>
+        <hr>
+      </div>
+      <div class="form-row mt-4">
+        <div class="col-lg-6 pr-2">
+          <div class="form-group">
+            <label for="firstname"black>
+              First name
+            </label>
+            <input class="form-control" id="firstname" name="firstname" placeholder="Patrick" required="required" type="text" />
+          </div>
+        </div>
+        <!-- Last name -->
+        <div class="col-lg-6 pl-2">
+          <div class="form-group">
+            <label for="lastname">
+              Last name
+            </label>
+            <input class="form-control" id="lastname" name="lastname" placeholder="Star" required="required" type="text" /></div>
+          </div>
+        </div>
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="Phone">
+            Phone Number
+          </label>
+          <input class="form-control" id="phone" name="phone" placeholder="+1 (716) 666-6182" required="required" type="text" />
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">
+            Email
+          </label>
+          <input class="form-control" id="email" name="email" placeholder="patrickstar@ironhack.com" required="required" type="email" />
+        </div>
+        <!-- course -->
+        <div class="form-group">
+          <label>
+            I'm interested in this course
+          </label> 
+          <select class="form-control input-lg" data-id="Course" id="input" onchange="course()" name="Course">
+            <option value="selection">Please select a course</option>
+            <option>Yoga</option>
+            <option>Pilates</option>
+          </select>
+        </div>
+        <!-- Select edition -->
+        <div class="form-group">
+          <label>
+            I'm interested in this edition</label>
+          <select class="form-control input-lg" id="output" onchange="random_function1()" name="I_m_interested_in_this_edition" >
+            <option value="selection">Select your favorite edition</option>
+            <!-- <option value="2021-01-11T00:00:00.000Z">11 January</option>
+            <option value="2021-03-22T00:00:00.000Z">22 March</option> -->
+          </select>
+        </div>
+        <!-- Terms & Conditions -->
+        <div class="form-group checkbox">
+          <input id="accept_terms_scholarship" name="accept_terms_scholarship" required="required" type="checkbox" value="No" />
+          <label class="checkbox-label" for="accept_terms">
+            I accept 
+            <a href="#">Terms & Conditions</a>
+          </label>
+        </div>
+        <!-- Newsletter -->
+        <div class="form-group">
+          <input id="Email_Opt_In" name="Email_Opt_In" type="checkbox" />
+          <label class="checkbox-label" for="Email_Opt_In">
+            I want to receive news from you
+          </label>
+        </div>
+
+        <button class="form-submit btn btn-purple btn-lg btn-block" type="submit">Apply now</button>
+    </form>
+  </div>
+  <!-- Medias -->
+  <div>
+    <div class="media mt-5">
+      <img src="images/Icon.png" class="align-self-start mr-4 mt-2" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Why you should</h5>
+        <p>This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.</p>
+      </div>
+    </div>
+    <div class="media">
+      <img src="images/Icon-1.png" class="align-self-start mr-4 mt-2" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Why you should</h5>
+        <p>This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.</p>
+      </div>
+    </div>
+    <div class="media">
+      <img src="images/Icon-2.png" class="align-self-start mr-4 mt-2" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Why you should</h5>
+        <p>This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test</p>
+      </div>
+    </div>
+    <div class="media mb-5">
+      <img src="images/Icon-3.png" class="align-self-start mr-4 mt-2" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0">Why you should</h5>
+        <p>This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.This is just a test.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    // form-control input course
+    function course() {
+      var a = document.getElementById("input").value;
+        if(a==="Yoga") {
+          var arr=["11 March","5 April"];
+        } else if (a==="Pilates") {
+          var arr=["11 March","5 June","3 July"];
+        }
+      var string="";
+        for(i=0;i<arr.length;i++) {
+          string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+        }
+      document.getElementById("output").innerHTML=string;
+    }
+
+    // form-control input color
+    $("select").change(function() {
+      $(this).css('color','rgba(45, 53, 76, 0.7)')
+    })
+    $("input").change(function() {
+      $(this).css('color','rgba(45, 53, 76, 0.7)')
+    })
+
+    $(document).ready(function () {
+      // $("#Email_Opt_In").prepend('');
+      $('<input name="Email_Opt_In" type="hidden" value="0" />'
+        ).insertBefore("#Email_Opt_In");
+
+      $("#Email_Opt_In").on("change", function () {
+        if ($(this).is(":checked")) {
+          $(this).attr("value", "1");
+        } else {
+          $(this).attr("value", "0");
+        }
+      });
+
+      $("#accept_terms_scholarship").on("change", function () {
+        if ($(this).is(":checked")) {
+          $(this).attr("value", "Yes");
+        } else {
+          $(this).attr("value", "No");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
